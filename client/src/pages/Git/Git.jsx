@@ -7,7 +7,7 @@ const Git = () => {
   const [git, setGit] = useState([]);
 
   const getData = async () => {
-    const res = await fetch("http://localhost:8080/getgit")
+    const res = await fetch("https://alllinks-server-file.onrender.com/getgit")
 
     const result = await res.json();
     console.log(result.data);

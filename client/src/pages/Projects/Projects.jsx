@@ -8,7 +8,7 @@ const Projects = () => {
     const [project, setProject] = useState([]);
 
     const getData = async () => {
-        const res = await fetch("http://localhost:8080/getprojects")
+        const res = await fetch("https://alllinks-server-file.onrender.com/getprojects")
 
         const result = await res.json();
         console.log(result.data);

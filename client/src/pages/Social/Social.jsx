@@ -7,7 +7,7 @@ const Social = () => {
   const [social, setSocial] = useState([])
 
   const getData = async () => {
-    const res = await fetch("http://localhost:8080/getsocial")
+    const res = await fetch("https://alllinks-server-file.onrender.com/getsocial")
 
     const result = await res.json();
     console.log(result.data);

@@ -7,7 +7,7 @@ const Npm = () => {
   const [npm, setNpm] = useState([]);
 
   const getData = async () => {
-    const res = await fetch("http://localhost:8080/getnpm")
+    const res = await fetch("https://alllinks-server-file.onrender.com/getnpm")
 
     const result = await res.json();
     console.log(result.data);
