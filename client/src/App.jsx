@@ -12,11 +12,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<Dashboard />} />
-          <Route exact path='/npmCommand' element={<Npm />} />
-          <Route exact path='/gitCommands' element={<Git/>} />
-          <Route exact path='/projectsLink' element={<Projects />} />
-          <Route exact path='/socialLinks' element={<Social />} />
+          <Route  path='/' element={<Dashboard />} />
+          <Route  path='/npmCommand' element={<Npm />} />
+          <Route  path='/gitCommands' element={<Git/>} />
+          <Route  path='/projectsLink' element={<Projects />} />
+          <Route  path='/socialLinks' element={<Social />} />
         </Routes>
       </BrowserRouter>
     </>
