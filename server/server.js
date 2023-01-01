@@ -21,7 +21,8 @@ app.use(cors({
     credentials: true
 }));
 
-app.use(require("./routes/addLink"))
+app.use(require("./routes/addLink"));
+app.use(require("./routes/getLinks"));
 
 app.get("/", (req, res)=>{
     res.send("Hello");

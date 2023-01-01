@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-container .inner-project-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    width: 50%;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.inner-project-container .project-title{
+    width: 70%;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.inner-project-container .project-link{
+    width: 70%;
+    display: flex;
+}
+
+.inner-project-container .project-link input{
+    width: 90%;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 17px #a7a2a2;
+    margin-left: 1rem;
+}
+
+.copy-text{
+    width: 10%;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy-text i{
+    width: 100%;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.inner-project-container .project-repo-link{
+    width: 70%;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.inner-project-container .project-repo-link input{
+    width: 90%;
+    padding: 1rem;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 4px 17px #a7a2a2;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+    .project-container .inner-project-container{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .inner-project-container .project-title,
+    .inner-project-container .project-link,
+    .inner-project-container .project-repo-link{
+        width: 100%;
+    }
+
+    .inner-project-container .project-link input{
+        margin-left: 1rem;
+    }
+
+    .inner-project-container .project-repo-link input{
+        margin-left: 1rem;
+    }
+  }
+  
+  @media screen and (min-width: 500px) and (max-width: 900px) {
+      .project-container .inner-project-container{
+        width: 100%;
+      }
+    }
