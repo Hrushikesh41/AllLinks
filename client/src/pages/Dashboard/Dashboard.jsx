@@ -9,13 +9,13 @@ const Dashboard = () => {
           <a href='/projectsLink'>Projects</a>
         </div>
         <div className='social'>
-          <a href='/socialLinks'>Social Links</a>
+          <a href='/socialLinks'>Social</a>
         </div>
         <div className='git'>
-          <a href='/gitCommands'>Git Command</a>
+          <a href='/gitCommands'>Git</a>
         </div>
         <div className='npm'>
-          <a href='/npmCommand'>NPM Command</a>
+          <a href='/npmCommand'>NPM</a>
         </div>
 
       </div>

@@ -53,8 +53,16 @@
   .container .social,
   .container .git,
   .container .npm {
-    width: 75%;
+    width: 45%;
   }
+
+  .container .project a,
+.container .social a,
+.container .git a,
+.container .npm a{
+  margin: 1rem;
+  padding: 1.5rem;
+}
 }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
