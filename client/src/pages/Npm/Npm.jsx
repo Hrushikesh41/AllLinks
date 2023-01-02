@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "../Projects/Projects.css"
 import Dashboard from '../Dashboard/Dashboard';
 import copy from 'copy-to-clipboard';
+import { HashLoader } from 'react-spinners';
 
 const Npm = () => {
   const [npm, setNpm] = useState([]);
@@ -24,7 +25,7 @@ const Npm = () => {
       <Dashboard />
       <div className='project-container'>
         {
-          npm.map((element, key) => {
+          npm.length == 0 ? <HashLoader color="#36d7b7"/> : npm.map((element, key) => {
             return (
               <>
                 <div className='inner-project-container'>

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "../Projects/Projects.css"
 import Dashboard from '../Dashboard/Dashboard';
 import copy from 'copy-to-clipboard';
+import {HashLoader} from "react-spinners"
 
 const Git = () => {
   const [git, setGit] = useState([]);
@@ -24,7 +25,7 @@ const Git = () => {
       <Dashboard />
       <div className='project-container'>
         {
-          git.map((element, key) => {
+          git.length == 0 ? <HashLoader color="#36d7b7"/> :  git.map((element, key) => {
             return (
               <>
                 <div className='inner-project-container'>

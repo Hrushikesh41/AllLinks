@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Dashboard from '../Dashboard/Dashboard'
 import "./Projects.css"
 import copy from "copy-to-clipboard";
+import {HashLoader} from "react-spinners"
 
 const Projects = () => {
 
@@ -16,10 +17,6 @@ const Projects = () => {
         setProject(result.data)
     }
 
-    const handleClick = () => {
-        alert("Text Copied");
-    }
-
     useEffect(() => {
         getData();
     }, [])
@@ -29,7 +26,7 @@ const Projects = () => {
             <Dashboard />
             <div className='project-container'>
                 {
-                    project.map((element, key) => {
+                    project.length == 0 ? <HashLoader color="#36d7b7"/> : project.map((element, key) => {
                         return (
                             <>
                                 <div className='inner-project-container'>
