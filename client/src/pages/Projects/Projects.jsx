@@ -9,7 +9,8 @@ const Projects = () => {
     const [project, setProject] = useState([]);
 
     const getData = async () => {
-        const res = await fetch("https://alllinks-server-file.onrender.com/getprojects")
+        const res = await fetch("http://localhost:8080/addsocial");
+        // https://alllinks-server-file.onrender.com/getprojects
 
         const result = await res.json();
         console.log(result.data);
@@ -26,7 +27,11 @@ const Projects = () => {
             <Dashboard />
             <div className='project-container'>
                 {
-                    project.length == 0 ? <HashLoader color="#36d7b7"/> : project.map((element, key) => {
+                    project.length == 0 ? <>
+                        <div className='notFound'>
+                        <HashLoader color="#36d7b7" size={100}/>
+                        </div>
+                    </> : project.map((element, key) => {
                         return (
                             <>
                                 <div className='inner-project-container'>
