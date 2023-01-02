@@ -29,7 +29,7 @@ const Projects = () => {
                 {
                     project.length == 0 ? <>
                         <div className='notFound'>
-                        <HashLoader color="#36d7b7" size={100}/>
+                        <HashLoader color="#36d7b7" size={70}/>
                         </div>
                     </> : project.map((element, key) => {
                         return (

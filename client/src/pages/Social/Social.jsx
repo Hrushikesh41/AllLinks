@@ -25,7 +25,11 @@ const Social = () => {
       <Dashboard />
       <div className='project-container'>
         {
-          social.length == 0 ? <HashLoader color="#36d7b7"/> : social.map((element, key) => {
+          social.length == 0 ? <>
+                        <div className='notFound'>
+                        <HashLoader color="#36d7b7" size={70}/>
+                        </div>
+                    </> : social.map((element, key) => {
             return (
               <>
                 <div className='inner-project-container'>

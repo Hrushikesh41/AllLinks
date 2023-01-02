@@ -25,7 +25,11 @@ const Npm = () => {
       <Dashboard />
       <div className='project-container'>
         {
-          npm.length == 0 ? <HashLoader color="#36d7b7"/> : npm.map((element, key) => {
+          npm.length == 0 ? <>
+                        <div className='notFound'>
+                        <HashLoader color="#36d7b7" size={70}/>
+                        </div>
+                    </> : npm.map((element, key) => {
             return (
               <>
                 <div className='inner-project-container'>

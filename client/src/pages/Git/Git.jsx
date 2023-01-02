@@ -25,7 +25,11 @@ const Git = () => {
       <Dashboard />
       <div className='project-container'>
         {
-          git.length == 0 ? <HashLoader color="#36d7b7"/> :  git.map((element, key) => {
+          git.length == 0 ? <>
+                        <div className='notFound'>
+                        <HashLoader color="#36d7b7" size={70}/>
+                        </div>
+                    </> :  git.map((element, key) => {
             return (
               <>
                 <div className='inner-project-container'>
